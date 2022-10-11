@@ -33,12 +33,10 @@ window.onload = function() {
         if (winnerCheck() === "X") {
             gameStatus.textContent = "Congratulations! X is the Winner!";
             gameStatus.classList.add('you-won');
-            console.log("gameStatus");
 
         } else if (winnerCheck() === "O") {
             gameStatus.textContent = "Congratulations! O is the Winner!";
             gameStatus.classList.add('you-won');
-            console.log("gameStatus");
         }
     }
 
@@ -89,5 +87,23 @@ window.onload = function() {
         } else if ((id_2.textContent == id_4.textContent) && (id_2.textContent == id_6.textContent)) {
                 return id_2.textContent   
         }
+    }
+
+    for (var i = 0; i < board.children.length; i++) {
+        var allSquares = board.children[i]
+        allSquares.addEventListener('click', resetButton);
+    }
+
+    const reset = document.querySelector(".btn");
+
+    function resetButton() { 
+        reset.addEventListener('click', e => {
+            e.preventDefault();
+            this.classList.remove("X");
+            this.classList.remove("O");
+            this.textContent = "";
+            gameStatus.textContent = "Move your mouse over a square and click to play an X or an O.";
+            gameStatus.classList.remove('you-won');
+        });
     }
 }
