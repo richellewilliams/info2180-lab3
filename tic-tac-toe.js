@@ -18,25 +18,27 @@ window.onload = function() {
     const gameStatus = document.querySelector("#status");
 
     function X_or_O() {
-        if (index % 2 == 0) {
+        if (this.textContent == 0) {
+            if (index % 2 == 0) {
                 options.push("X");
                 this.textContent = options[index];
                 this.classList.add(options[index]);
          
-        } else if (index % 2 == 1) {
+            } else if (index % 2 == 1) {
                 options.push("O");
                 this.textContent = "O";
                 this.classList.add(options[index]);
-        } 
-        index++;
+            } 
+            index++;
 
-        if (winnerCheck() === "X") {
-            gameStatus.textContent = "Congratulations! X is the Winner!";
-            gameStatus.classList.add('you-won');
+            if (winnerCheck() === "X") {
+                gameStatus.textContent = "Congratulations! X is the Winner!";
+                gameStatus.classList.add('you-won');
 
-        } else if (winnerCheck() === "O") {
-            gameStatus.textContent = "Congratulations! O is the Winner!";
-            gameStatus.classList.add('you-won');
+            } else if (winnerCheck() === "O") {
+                gameStatus.textContent = "Congratulations! O is the Winner!";
+                gameStatus.classList.add('you-won');
+            }
         }
     }
 
