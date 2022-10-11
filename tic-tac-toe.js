@@ -1,7 +1,6 @@
 "use strict";
 
 window.onload = function() {
-
     const board = document.querySelector("#board");
     
     for (var i = 0; i < board.children.length; i++) {
@@ -29,5 +28,19 @@ window.onload = function() {
                 this.classList.add(options[index]);
         } 
         index++;
+    }
+
+    for (var i = 0; i < board.children.length; i++) {
+        var individualSquare = board.children[i]
+        individualSquare.addEventListener('mouseover', mouseOver);
+        individualSquare.addEventListener('mouseout', mouseOut);
+    }
+
+    function mouseOver(){
+        this.classList.add("hover");
+    }
+
+    function mouseOut(){
+        this.classList.remove("hover");
     }
 }
