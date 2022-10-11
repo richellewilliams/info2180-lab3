@@ -72,22 +72,22 @@ window.onload = function() {
         const id_7 = document.getElementById("7");
         const id_8 = document.getElementById("8");
 
-        if ((id_0.textContent == id_1.textContent) && (id_0.textContent == id_2.textContent)) {
-            return id_0.textContent
-        } else if ((id_3.textContent == id_4.textContent) && (id_3.textContent == id_5.textContent)) {
-            return id_3.textContent
-        } else if ((id_6.textContent == id_7.textContent) && (id_6.textContent == id_8.textContent)) {
-            return id_6.textContent
-        } else if ((id_0.textContent == id_3.textContent) && (id_0.textContent == id_6.textContent)) {
-            return id_0.textContent
-        } else if ((id_1.textContent == id_4.textContent) && (id_1.textContent == id_7.textContent)) {
-            return id_1.textContent
-        } else if ((id_2.textContent == id_5.textContent) && (id_2.textContent == id_8.textContent)) {
-            return id_2.textContent
-        } else if ((id_0.textContent == id_4.textContent) && (id_0.textContent == id_8.textContent)) {
-                return id_0.textContent
-        } else if ((id_2.textContent == id_4.textContent) && (id_2.textContent == id_6.textContent)) {
-                return id_2.textContent   
+        if ((id_0.textContent == id_1.textContent) && (id_0.textContent == id_2.textContent) && (id_1.textContent == id_2.textContent)) {
+            return id_0.textContent;
+        } else if ((id_3.textContent == id_4.textContent) && (id_3.textContent == id_5.textContent) && (id_4.textContent == id_5.textContent)) {
+            return id_3.textContent;
+        } else if ((id_6.textContent == id_7.textContent) && (id_6.textContent == id_8.textContent) && (id_7.textContent == id_8.textContent)) {
+            return id_6.textContent;
+        } else if ((id_0.textContent == id_3.textContent) && (id_0.textContent == id_6.textContent) && (id_3.textContent == id_6.textContent)) {
+            return id_0.textContent;
+        } else if ((id_1.textContent == id_4.textContent) && (id_1.textContent == id_7.textContent) && (id_4.textContent == id_7.textContent)) {
+            return id_1.textContent;
+        } else if ((id_2.textContent == id_5.textContent) && (id_2.textContent == id_8.textContent) && (id_5.textContent == id_8.textContent)) {
+            return id_2.textContent;
+        } else if ((id_0.textContent == id_4.textContent) && (id_0.textContent == id_8.textContent) && (id_4.textContent == id_8.textContent)) {
+            return id_0.textContent;
+        } else if ((id_2.textContent == id_4.textContent) && (id_2.textContent == id_6.textContent) && (id_4.textContent == id_6.textContent)) {
+            return id_2.textContent;   
         }
     }
 
